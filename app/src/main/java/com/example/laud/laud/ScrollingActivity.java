@@ -1,6 +1,7 @@
 package com.example.laud.laud;
 
 import android.app.Activity;
+import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -38,14 +39,12 @@ public class ScrollingActivity extends AppCompatActivity {
                 try {
                     mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
                     mp.setDataSource(getApplicationContext(), Uri.parse(url));
-                    mp.setOnPreparedListener(this);
-                    mp.prepareAsync();
-                    //mp.prepare();
-//                    mp.start();
+                    mp.prepare();
+                    mp.start();
                 } catch (Exception e) {
                     Log.i("Exception", "Exception in streaming mediaplayer e = " + e);
+                    e.printStackTrace();
                 }
-                Log.i("Complite action","Try play mus");
             }
         });
 
