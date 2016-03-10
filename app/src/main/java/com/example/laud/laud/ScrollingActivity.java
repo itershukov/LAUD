@@ -32,18 +32,29 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Log.i("Click to action","Try play mus");
-                String url = "rtsp://192.168.110.49:8554/5";
+                String url = "http://streams.lrn.fm:8100/";//"rtsp://192.168.110.49:8554/5";
+//                String url = "rtsp://192.168.110.49:8554/5";
                 MediaPlayer mp = new MediaPlayer();
                 try {
                     mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
                     mp.setDataSource(getApplicationContext(), Uri.parse(url));
-                    mp.prepare();
-                    mp.start();
+                    mp.setOnPreparedListener(this);
+                    mp.prepareAsync();
+                    //mp.prepare();
+//                    mp.start();
                 } catch (Exception e) {
                     Log.i("Exception", "Exception in streaming mediaplayer e = " + e);
                 }
+                Log.i("Complite action","Try play mus");
             }
         });
+
+
+    }
+
+    /** Called when MediaPlayer is ready */
+    public void onPrepared(MediaPlayer player) {
+        player.start();
     }
 
     @Override
