@@ -1,7 +1,9 @@
 package com.example.laud.laud;
 
+import android.app.Activity;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -11,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import java.io.IOException;
 
@@ -29,11 +32,11 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Log.i("Click to action","Try play mus");
-                String url = "rtsp://64.202.98.20/telespazio/Telespazio%20TV%20live";
+                String url = "rtsp://192.168.110.49:8554/5";
                 MediaPlayer mp = new MediaPlayer();
                 try {
-                    mp.setDataSource(url);
                     mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+                    mp.setDataSource(getApplicationContext(), Uri.parse(url));
                     mp.prepare();
                     mp.start();
                 } catch (Exception e) {
