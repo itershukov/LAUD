@@ -34,25 +34,29 @@ public class ScrollingActivity extends AppCompatActivity {
 
                 Log.i("Click to action","Try play mus");
 //                String url = "http://streams.lrn.fm:8100/";//"rtsp://192.168.110.49:8554/5";
-                String url = "rtsp://192.168.110.49:8554/test.mp3";
-//                String url = "http://192.168.110.49:8554/test.mp3";
-//                String url = "rtsp://192.168.110.49:8554/5";
+//                String url = "http://samples.mplayerhq.hu/A-codecs/MP3/01%20-%20Charity%20Case.mp3";
+//                String url = "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov";
+//                String url = "udp://@192.168.110.49:1234";
+//                String url = "rtsp://192.168.110.49:8554/123";
+                String url = "rtsp://195.209.248.200:554/tvorigin/33";
+//                String url = "/storage/emulated/0/Download/out.flac";
                 MediaPlayer mp = new MediaPlayer();
                 try {
-                    mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+
                     mp.setDataSource(getApplicationContext(), Uri.parse(url));
 
-                    mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-
-                        @Override
-                        public void onPrepared(MediaPlayer mp) {
-                            mp.start();
-
-                        }
-                    });
-
-//                    mp.prepare();
-//                    mp.start();
+//                    mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+//
+//                        @Override
+//                        public void onPrepared(MediaPlayer mp) {
+//                            mp.start();
+//
+//                        }
+//                    });
+//                    mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+//                    mp.prepareAsync();
+                    mp.prepare();
+                    mp.start();
                 } catch (Exception e) {
                     Log.i("Exception", "Exception in streaming mediaplayer e = " + e);
                     e.printStackTrace();
