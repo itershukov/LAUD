@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class MediaControl {
     private static MediaPlayer player = null;
     private Context context;
-
+    private static Stream playingStream;
     public MediaControl(){
         if(this.player == null){
             this.player = new MediaPlayer();
@@ -22,15 +22,24 @@ public class MediaControl {
     };
 
     public void playStream(Stream stream) throws IOException {
-        stopStream();
+        if(stream.isPlaying){
+            stopStream();
+            return;
+        }
+        if(playingStream != null && playingStream.isPlaying)
+            stopStream();
+
         this.player.setAudioStreamType(AudioManager.STREAM_MUSIC);
         this.player.setDataSource(stream.url);
         player.prepare();
         player.start();
+        stream.isPlaying = true;
+        playingStream = stream;
     }
 
     public void stopStream(){
        this.player.reset();
+        playingStream.isPlaying = false;
     }
 
 }
