@@ -1,2 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.2.0_41e29c8a4290a09dc72dafcfd1757a8a0e88e7a8.jar" />
+    </item>
+    <item
+        jar="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.2.0_fd0618aab29407d6d16713806337bb7e67799d63.jar" />
+    </item>
+    <item
+        jar="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.2.0_ba2750a6a45a70fb9a7ad6797da557c2a4de504c.jar" />
+    </item>
+    <item
+        jar="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
+        <dex dex="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.2.0_8443a659b9fe3af18be5aba96f2866e0407beb81.jar" />
+    </item>
+    <item
+        jar="/home/sinires/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.0/support-annotations-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.0_4089c2050fdf65c0b234de6b9cf2be138d74f7ec.jar" />
+    </item>
+    <item
+        jar="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d4c936aa8c7d2522c82e3f1829c791d9e367f009">
+        <dex dex="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.2.0_0f278d8b3ac7b31a5f56f9c944317e4a8acfe55e.jar" />
+    </item>
+    <item
+        jar="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.0_dbde56b15b3d3f28674fd8a0b5609d5b7fd2095b.jar" />
+    </item>
+    <item
+        jar="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
+        <dex dex="/home/sinires/AndroidStudioProjects/git/LAUD/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.2.0_9a3bebad8a1c7624eed78e2994017b944f5cf227.jar" />
+    </item>
+
+</items>
