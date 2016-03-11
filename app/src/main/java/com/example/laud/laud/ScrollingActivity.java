@@ -27,18 +27,19 @@ public class ScrollingActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Log.i("Click to action","Try play mus");
-//                String url = "http://streams.lrn.fm:8100/";//"rtsp://192.168.110.49:8554/5";
+                String url = "http://streams.lrn.fm:8100/";//"rtsp://192.168.110.49:8554/5";
 //                String url = "http://samples.mplayerhq.hu/A-codecs/MP3/01%20-%20Charity%20Case.mp3";
 //                String url = "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov";
 //                String url = "udp://@192.168.110.49:1234";
 //                String url = "rtsp://192.168.110.49:8554/123";
-                String url = "rtsp://195.209.248.200:554/tvorigin/33";
+//                String url = "rtsp://195.209.248.200:554/tvorigin/33";
 //                String url = "/storage/emulated/0/Download/out.flac";
                 MediaPlayer mp = new MediaPlayer();
                 try {
